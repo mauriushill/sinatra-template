@@ -9,7 +9,7 @@ end
 
 
 get("/holiday") do
-  raw_data = HTTP.get("https://calendarific.com/api/v2/holidays")
-  @api_data = JSON.parse(response.body)
+  @raw_data = HTTP.get("https://calendarific.com/HOLIDAY_SEASON/v2/holidays")
+ 
   erb(:holidayfinder)
 end
